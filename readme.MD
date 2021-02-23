@@ -1,3 +1,5 @@
+https://se-foundations-305715.ey.r.appspot.com/
+
 # Foundations of Software Engineering
 This repository provides a starting point for students participating in the Foundations course at CODE University.
 
