@@ -11,6 +11,7 @@ def test_index():
         response = test_client.get('/')
 
         # check that the HTTP response is a success
+        # What does this status_code mean?
         assert response.status_code == 200
 
         # Store the contents of the html response in a local variable.
