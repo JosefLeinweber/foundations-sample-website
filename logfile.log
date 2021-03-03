@@ -1,0 +1,21 @@
+03/03/2021 12:46:52 PM - 127.0.0.1 - - [03/Mar/2021 12:46:52] "[37mGET / HTTP/1.1[0m" 200 -
+03/03/2021 12:46:53 PM - 127.0.0.1 - - [03/Mar/2021 12:46:53] "[37mGET / HTTP/1.1[0m" 200 -
+03/03/2021 12:46:54 PM - 127.0.0.1 - - [03/Mar/2021 12:46:54] "[37mGET /static/styles.css HTTP/1.1[0m" 200 -
+03/03/2021 12:46:54 PM - 127.0.0.1 - - [03/Mar/2021 12:46:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+03/03/2021 12:46:58 PM - User input: Hello
+03/03/2021 12:46:58 PM - No matching color found
+03/03/2021 12:46:58 PM - 127.0.0.1 - - [03/Mar/2021 12:46:58] "[37mPOST /color HTTP/1.1[0m" 200 -
+03/03/2021 12:47:04 PM - User input: REd
+03/03/2021 12:47:04 PM - Hex-code: #ff0000
+03/03/2021 12:47:04 PM - 127.0.0.1 - - [03/Mar/2021 12:47:04] "[37mPOST /color HTTP/1.1[0m" 200 -
+03/03/2021 12:48:38 PM -  * Restarting with stat
+03/03/2021 12:48:38 PM -  * Debugger is active!
+03/03/2021 12:48:38 PM -  * Debugger PIN: 129-159-661
+03/03/2021 12:48:38 PM -  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+03/03/2021 12:48:45 PM - 127.0.0.1 - - [03/Mar/2021 12:48:45] "[37mGET / HTTP/1.1[0m" 200 -
+03/03/2021 12:48:55 PM - User input: YAY
+03/03/2021 12:48:55 PM - No matching color found
+03/03/2021 12:48:55 PM - 127.0.0.1 - - [03/Mar/2021 12:48:55] "[37mPOST /color HTTP/1.1[0m" 200 -
+03/03/2021 12:49:11 PM - User input: bLUE
+03/03/2021 12:49:11 PM - Hex-code: #0000ff
+03/03/2021 12:49:11 PM - 127.0.0.1 - - [03/Mar/2021 12:49:11] "[37mPOST /color HTTP/1.1[0m" 200 -
