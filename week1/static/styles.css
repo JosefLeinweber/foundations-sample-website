@@ -33,13 +33,18 @@ footer {
 
 header {
     background-image: url("assets/speaker_1.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: 75% 10%;
 }
 
 .banner {
     padding:10rem;
     text-align: center;
+    color:rgb(0, 0, 0);
     font-size: 3rem;
+    background-color: rgba(189, 189, 189, 0.589);
     
 }
 
@@ -74,14 +79,44 @@ header {
     text-align: center;
 }
 
-.content{
-    max-width: 60rem;
-    margin: auto;
-}
 
-#sub-title{
+
+.sub-title{
     text-align: center;
     font-size: 2.4rem;
     margin: 3rem;
 }
 
+.content{
+    max-width: 60%;
+    margin: auto;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  input[type="email"] {
+      width: 100%;
+
+  }
+
+  label {
+    padding: 1rem 1rem 1rem 0rem;
+    display: inline-block;
+  }
+
+  input[type=submit] {
+    background-color: #363636;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }

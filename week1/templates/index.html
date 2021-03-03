@@ -1,23 +1,45 @@
-  
-<!-- This is a basic html page which Flask can serve. 
-It does not use the power of Flask, but is easier to read than some of the other files. 
--->
+<!-- This html template will start off all of your other html files/pages -->
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- the page title will be a varible passed to the render_template() function for each page separately-->
+    <title> {{ page_title }}</title>
+  	<meta charset="utf-8"/>
+    <!-- include the css from the file static/style.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Raleway&display=swap" rel="stylesheet">
+  </head>
+  <body>
 
-<!-- learn more about what belongs in head and how it is used here 
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
-<head>
-	<title>Home</title>
-	<meta charset="utf-8"/>
-    <link rel="stylesheet" href="../static/styles.css">
-</head> 
-<body>
-    <h1 class="banner">What you can find on here</h1>
-    <p>This page is static HTML, or hard-coded. It is similar to what we did in class the first week on glitch. </p>
-    <p>So far, we are not using the power of Flask, but you will in this assignment!</p>
+  <!-- this headline will appear on all pages. -->
+  <header>
+    <div class="banner">
+      <h1 id="header-title"> How to designe Loudspeakers</h1> 
+    </div>
+  </header>
+  <div id="navbar">
+    <ul id="navbar-list">
+      <li class="navbar-list-item"><a class="navbar-list-item-link" href="/home">Home</a></li>
+      <li class="navbar-list-item"><a class="navbar-list-item-link" href="/guidline">Guidline</a></li>
+      <li class="navbar-list-item"><a class="navbar-list-item-link" href="/feedback">Feedback</a></li>
+    </ul>
+  </div>
+  <div class="sub-title">
+    <h2>{{sub_title}}</h2>
+  </div>
 
-    <p> To see a page which starts to use Flask to <em>generate</em> dynamic code, <a href="/first-page">click here</a>.</p>
-</body>
-</html>
+  <!-- This is the part which will be different on each page. 
+       see first-page.html for an example of using it -->
+  <main>
+    <div class="content">
+      <div class=sub-title>
+          <h2>Starting page yay</h2>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <h3> You can submit content ideas through the feedback form</h3>
+  </footer>
+  </body>
