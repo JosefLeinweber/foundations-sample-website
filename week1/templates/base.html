@@ -21,20 +21,24 @@
   </header>
   <div id="navbar">
     <ul id="navbar-list">
-      <li class="navbar-list-item"><a class="navbar-list-item-link" href="#">Guidline</a></li>
-      <li class="navbar-list-item"><a class="navbar-list-item-link" href="#">Insperation</a></li>
-      <li class="navbar-list-item"><a class="navbar-list-item-link" href="#">Tools</a></li>
-      <li class="navbar-list-item"><a class="navbar-list-item-link" href="#">Feedback</a></li>
+      <li class="navbar-list-item"><a class="navbar-list-item-link" href="/first-page">Home</a></li>
+      <li class="navbar-list-item"><a class="navbar-list-item-link" href="/second-page">Guidline</a></li>
+      <li class="navbar-list-item"><a class="navbar-list-item-link" href="/third-page">Feedback</a></li>
     </ul>
+  </div>
+  <div id="sub-title">
+    <h2>{{sub_title}}</h2>
   </div>
 
   <!-- This is the part which will be different on each page. 
        see first-page.html for an example of using it -->
   <main>
-    {% block content%}
-    {% endblock %}
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+    </div>
   </main>
   <footer>
-    <h3> Made with love </h3>
+    <h3> You can submit content ideas through the feedback form</h3>
   </footer>
   </body>
