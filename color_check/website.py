@@ -1,6 +1,6 @@
 from flask import Flask, request
 from flask import render_template
-from controllers.get_color_code import get_color_code
+from color_check.controllers.get_color_code import get_color_code
 import logging
 app = Flask(__name__)
 
