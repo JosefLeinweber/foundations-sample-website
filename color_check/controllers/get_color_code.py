@@ -26,7 +26,7 @@ def get_color_code(color_name):
 
     else:
         logging.debug('Hex-code: %s' % hex_code) 
-        return str(hex_code)
+        return hex_code
     
 
     
