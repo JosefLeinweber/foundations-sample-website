@@ -14,7 +14,7 @@ import logging
 import json
 def get_color_code(color_name):
     color_name = color_name.lower()
-    with open('color_check\data\css-color-names.json') as f:
+    with open(r'color_check\data\css-color-names.json') as f:
         data = json.load(f)
     
     hex_code = data.get(color_name)
