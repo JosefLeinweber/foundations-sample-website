@@ -20,7 +20,7 @@ def get_color_code(color_name):
     hex_code = data.get(color_name)
 
     if hex_code == None:
-        logging.debug('No matching color found')
+        # logging.debug('No matching color found')
         return ("Color does not exist")
         
 
