@@ -21,12 +21,12 @@ def get_color_code(color_name):
 
     if hex_code == None:
         logging.debug('No matching color found')
-        return "Color does not exist"
+        return ("Color does not exist")
         
 
     else:
         logging.debug('Hex-code: %s' % hex_code) 
-        return hex_code
+        return (hex_code)
     
 
     
