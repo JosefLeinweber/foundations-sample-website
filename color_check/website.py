@@ -23,10 +23,14 @@ def show_color():
     # - render a new page which shows a square of that color and its name
     # - if the color doesn't exist, give the user a useful error message.
     # - create a log.txt file which records (logs) the user requests. 
-
+    
     user_submitted_string = request.form.get('color')
-    logging.debug('User input: %s' % (user_submitted_string))
-    hex_code = get_color_code(user_submitted_string)
+    if user_submitted_string != None:
+        logging.debug('User input: %s' % (user_submitted_string))
+        hex_code = get_color_code(user_submitted_string)
+
+    else:
+        hex_code = "wrong input"
 
     
     
