@@ -4,7 +4,7 @@ from color_check.controllers.get_color_code import get_color_code
 import logging
 app = Flask(__name__)
 
-logging.basicConfig(filename='tmp/color-check.log', filemode='a', format='%(asctime)s - %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.DEBUG)
+logging.basicConfig(filename='/tmp/color-check.log', filemode='a', format='%(asctime)s - %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.DEBUG)
 
 
 @app.route('/')
