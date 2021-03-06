@@ -14,13 +14,13 @@ import logging
 import json
 def get_color_code(color_name):
     color_name = color_name.lower()
-    with open('color_check/data/css-color-names.json') as f:
+    with open('/color_check/data/css-color-names.json') as f:
         data = json.load(f)
     
     hex_code = data.get(color_name)
 
     if hex_code == None:
-        # logging.debug('No matching color found')
+        logging.debug('No matching color found')
         return ("Color does not exist")
         
 

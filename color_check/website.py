@@ -4,7 +4,7 @@ from color_check.controllers.get_color_code import get_color_code
 import logging
 app = Flask(__name__)
 
-# logging.basicConfig(filename='logfile.log', filemode='a', format='%(asctime)s - %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.DEBUG)
+logging.basicConfig(filename='tmp/color-check.log', filemode='a', format='%(asctime)s - %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.DEBUG)
 
 
 @app.route('/')
@@ -26,7 +26,7 @@ def show_color():
     
     user_submitted_string = request.form.get('color')
     if user_submitted_string != None:
-        # logging.debug('User input: %s' % (user_submitted_string))
+        logging.debug('User input: %s' % (user_submitted_string))
         hex_code = get_color_code(user_submitted_string)
 
     else:
